@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Features — uTrack Sports</title>
+<meta name="description" content="What uTrack does: live tap-to-track stat entry, a real match clock, substitutions, automatic reports, sharing, and full season organization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <nav class="nav-links" id="nav">
+      <a href="features.html" class="active">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="how-to.html">How it works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap center">
+    <span class="eyebrow">Features</span>
+    <h1>Everything you need to<br>keep the book</h1>
+    <p class="lead" style="margin:14px auto 0">uTrack was built around one job: capturing a youth soccer game accurately, fast, from the sideline &mdash; then handing you clean stats afterward.</p>
+  </div>
+</div>
+
+<section style="padding-top:30px">
+  <div class="wrap">
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="ic">&#9917;</div>
+        <h3>Tap-to-track stat entry</h3>
+        <p>The field shows your lineup. Tap a player and log a goal, assist, shot, save, foul, corner, or card in a couple of taps. Built to keep pace with a live match instead of slowing you down.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#9201;&#65039;</div>
+        <h3>A real match clock</h3>
+        <p>Start, pause, and run the clock by period. uTrack timestamps plays as they happen, so your timeline and minutes-played come out right without extra bookkeeping.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#128260;</div>
+        <h3>Substitutions &amp; minutes</h3>
+        <p>Swap players in and out from the bench. uTrack tracks who's on the field and tallies minutes played per player automatically.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#8634;</div>
+        <h3>Undo, for the sideline</h3>
+        <p>Logged the wrong player or a goal got called back? Undo with a confirmation step. Games are messy &mdash; the app expects corrections.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#128202;</div>
+        <h3>Reports that build themselves</h3>
+        <p>Game statistics, a match timeline, a full box score, and a play-by-play feed &mdash; all generated from the plays you logged. No spreadsheet afterward.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#128228;</div>
+        <h3>Share with the team</h3>
+        <p>Send a game summary or stats to parents and players as PDF, HTML, or CSV, straight from your phone using the share options you already use.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#128451;&#65039;</div>
+        <h3>Teams, players, leagues &amp; seasons</h3>
+        <p>Set up rosters with numbers and starter/sub status, group teams into leagues, and keep full seasons of history in one place.</p>
+      </div>
+      <div class="card">
+        <div class="ic">&#128241;</div>
+        <h3>On your device, no account</h3>
+        <p>Your team data lives locally on your phone. There's no sign-up wall &mdash; install it and start tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Try before the whistle</span>
+    <h2>There's a demo game built right in</h2>
+    <p class="lead" style="margin:0 auto">Every install includes a finished demo match so you can explore the stats, timeline, and reports before your first real game.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-primary" href="screenshots.html">See the screens</a>
+      <a class="btn btn-ghost" href="how-to.html">How it works</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+      <div class="foot-links">
+        <a href="features.html">Features</a>
+        <a href="screenshots.html">Screenshots</a>
+        <a href="how-to.html">How it works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <p class="foot-note">&copy; <span id="yr"></span> uTrack Sports. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

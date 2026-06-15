@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ — uTrack Sports</title>
+<meta name="description" content="Common questions about uTrack: pricing, platforms, data and privacy, sharing, and what's coming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <nav class="nav-links" id="nav">
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="how-to.html">How it works</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap center">
+    <span class="eyebrow">FAQ</span>
+    <h1>Questions, answered</h1>
+  </div>
+</div>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="faq">
+      <details class="qa">
+        <summary>What is uTrack?</summary>
+        <div class="a">uTrack is a mobile app for tracking youth soccer games. You log plays live from the sideline by tapping players on a field view, and the app turns that into game statistics, a match timeline, box scores, and a play-by-play feed you can share.</div>
+      </details>
+      <details class="qa">
+        <summary>When is it available?</summary>
+        <div class="a">uTrack is in testing now and headed to the Apple App Store. This site is where you'll find details as launch gets closer.</div>
+      </details>
+      <details class="qa">
+        <summary>What will it cost?</summary>
+        <div class="a">uTrack is free to download, with an optional premium subscription that unlocks the full stats and reporting experience. Subscriptions are handled through your Apple ID in the App Store. Exact pricing is shown in the app at purchase.</div>
+      </details>
+      <details class="qa">
+        <summary>What devices does it run on?</summary>
+        <div class="a">uTrack is built for iPhone and iPad. The live game screen runs in landscape so you get the full field while you track.</div>
+      </details>
+      <details class="qa">
+        <summary>Do I need to create an account?</summary>
+        <div class="a">No. There's no sign-up wall &mdash; install the app and start setting up your team. Your data lives on your device.</div>
+      </details>
+      <details class="qa">
+        <summary>Where is my data stored?</summary>
+        <div class="a">Your team data &mdash; teams, players, games, and stats &mdash; is stored locally on your device. uTrack doesn't require a server account to keep your stats. See our <a href="privacy.html" style="color:var(--pitch-lt)">Privacy Policy</a> for the full details.</div>
+      </details>
+      <details class="qa">
+        <summary>Can I share stats with parents and players?</summary>
+        <div class="a">Yes. You can export and share game summaries and statistics as PDF, HTML, or CSV using your phone's normal sharing options, like email or messages.</div>
+      </details>
+      <details class="qa">
+        <summary>What can I track during a game?</summary>
+        <div class="a">Goals, assists, shots, shots on goal, saves, fouls, corners, and cards &mdash; plus substitutions and minutes played. It all rolls up into the reports automatically.</div>
+      </details>
+      <details class="qa">
+        <summary>Can I try it before tracking a real game?</summary>
+        <div class="a">Yes. Every install includes a finished demo match so you can explore the live screen, stats, timeline, and reports with real data first.</div>
+      </details>
+      <details class="qa">
+        <summary>Is it only for soccer?</summary>
+        <div class="a">uTrack is built for soccer today, on an architecture designed to support other sports over time. Soccer is the focus for launch.</div>
+      </details>
+      <details class="qa">
+        <summary>How do I get help?</summary>
+        <div class="a">Head to our <a href="support.html" style="color:var(--pitch-lt)">Support page</a> or email <a href="mailto:support@utracksports.com" style="color:var(--pitch-lt)">support@utracksports.com</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Still have a question?</h2>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-primary" href="support.html">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+      <div class="foot-links">
+        <a href="features.html">Features</a>
+        <a href="screenshots.html">Screenshots</a>
+        <a href="how-to.html">How it works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <p class="foot-note">&copy; <span id="yr"></span> uTrack Sports. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
