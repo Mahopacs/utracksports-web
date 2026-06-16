@@ -46,6 +46,12 @@ The uTrack app project (~/Documents/uTrack/) has a "## Related Projects" section
 - SSL: automatic via Cloudflare
 - Email: support@utracksports.com forwards to tedjyoung@yahoo.com via Cloudflare Email Routing (MX/SPF/DKIM records managed automatically by Cloudflare)
 
+## Positioning / branding direction
+- **Multi-sport positioning (decided 2026-06-16):** the app is becoming multi-sport — basketball is planned for Fall 2026. The website's brand/positioning is **de-emphasized away from soccer** at the headline/tagline/meta level. The app currently only does soccer, so soccer is NOT removed everywhere: concrete feature descriptions and screenshots stay soccer-specific for now; only top-level brand/positioning language was neutralized.
+- **✅ Brand-level neutralization IMPLEMENTED (2026-06-16):** "youth soccer" → "youth sports" in index.html (`<title>`, `<meta name="description">`, hero eyebrow), features.html (lead), and faq.html ("What is uTrack?" answer). The faq.html "Is it only for soccer?" answer now reads: built for soccer today, architecture supports multiple sports, basketball planned Fall 2026.
+- **Intentionally LEFT soccer-specific** (concrete, not brand-level): the faq.html "Is it only for soccer?" question + "built for soccer today" phrasing; concrete terms like "field view"/"match timeline"/"play-by-play"; all screenshots and their alt text.
+- **✅ Social share card IMPLEMENTED (2026-06-16):** `images/utrack-social-card.png` (1600×600 PNG) added, plus a fresh Open Graph + Twitter Card block in index.html `<head>` (absolute URLs, `og:image`/`twitter:image` = https://utracksports.com/images/utrack-social-card.png, `twitter:card` = summary_large_image), mirroring the new title/description. These tags previously did not exist; index.html is currently the only page with them.
+
 ## Notes / future work
 - Replace demo-data screenshots in screenshots/ with real-name app screenshots before App Store submission (capture manually on iPhone, drop into the folder, commit + push)
 - Privacy policy (privacy.html) will need updating when the future v3/v4 cloud-sync feature ships (plays syncing to cloud and appearing on the website)
