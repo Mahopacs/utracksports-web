@@ -180,6 +180,7 @@ section{padding:clamp(56px,9vw,110px) 0}
 .card p{font-size:.98rem}
 
 /* ---------- screenshots gallery ---------- */
+.shots-heading{color:var(--gold);font-size:1.6rem;margin-top:46px;margin-bottom:18px}
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 @media(max-width:820px){.shots{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.shots{grid-template-columns:1fr}}
