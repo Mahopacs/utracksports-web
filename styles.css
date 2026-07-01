@@ -192,6 +192,7 @@ section{padding:clamp(56px,9vw,110px) 0}
 }
 .shot-item .frame img{width:100%;height:auto;display:block}
 .shot-item.wide{grid-column:span 2}
+.shot-item.full{grid-column:1 / -1}
 @media(max-width:480px){.shot-item.wide{grid-column:span 1}}
 .shot-item h3{font-size:1.1rem;color:#fff;margin:0}
 .shot-item p{font-size:.92rem;margin:0}
