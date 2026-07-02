@@ -148,10 +148,11 @@ section{padding:clamp(56px,9vw,110px) 0}
 }
 .hero-shot img{width:100%;height:auto;display:block}
 .shot-cap{color:var(--slate);font-size:.88rem;text-align:center;margin-top:14px}
-.hero-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.hero-trio{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
 .hero-trio figure{margin:0}
 .hero-trio figcaption{color:var(--slate);font-size:.85rem;text-align:center;margin-top:10px}
-@media(max-width:760px){.hero-trio{grid-template-columns:1fr;gap:26px;max-width:420px;margin-left:auto;margin-right:auto}}
+.hero-trio .full{grid-column:1 / -1}
+@media(max-width:760px){.hero-trio{grid-template-columns:1fr;gap:26px}}
 
 /* portrait phone frame for screenshots */
 .phone-frame{
