@@ -152,7 +152,6 @@ section{padding:clamp(56px,9vw,110px) 0}
 .hero-trio figure{margin:0}
 .hero-trio figcaption{color:var(--slate);font-size:.85rem;text-align:center;margin-top:10px}
 @media(max-width:760px){.hero-trio{grid-template-columns:1fr;gap:26px;max-width:420px;margin-left:auto;margin-right:auto}}
-.hero-trio .span2{grid-column:span 2}
 
 /* portrait phone frame for screenshots */
 .phone-frame{
