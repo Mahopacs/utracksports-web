@@ -60,7 +60,7 @@ p{color:#d7e1f0}
 
 /* ---------- layout ---------- */
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-section{padding:clamp(40px,6vw,72px) 0}
+section{padding:clamp(32px,4vw,52px) 0}
 .center{text-align:center}
 
 /* ---------- header / nav ---------- */
@@ -113,7 +113,7 @@ section{padding:clamp(40px,6vw,72px) 0}
 /* ---------- hero ---------- */
 .hero{
   position:relative;overflow:hidden;
-  padding-top:clamp(60px,10vw,120px);padding-bottom:clamp(60px,10vw,120px);
+  padding-top:clamp(48px,7vw,80px);padding-bottom:clamp(32px,4vw,52px);
   background:
     radial-gradient(120% 80% at 50% -10%,rgba(46,158,91,.16),transparent 60%),
     var(--navy);
