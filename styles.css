@@ -275,9 +275,27 @@ section{padding:clamp(56px,9vw,110px) 0}
 
 /* --- how utrack is different (comparison grid) --- */
 .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.diff-box{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:24px}
-.diff-box .dk{font-weight:700;font-size:1rem;color:#fff;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.diff-box{background:var(--navy-soft);border:1px solid var(--line);border-radius:14px;padding:24px}
+.diff-box .dk{font-weight:700;font-size:1rem;color:var(--gold);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .diff-box .di{display:flex;gap:9px;align-items:flex-start;font-size:.9rem;color:var(--slate-lt,#8B96A0);margin-top:8px}
 .diff-box .di .dc{color:var(--pitch-lt);font-weight:700;flex-shrink:0}
 .diff-disclaim{margin-top:22px;font-size:.8rem;color:var(--slate-lt,#6B7880);line-height:1.5}
 @media(max-width:760px){.diff-grid{grid-template-columns:1fr}.ptable .r{flex-wrap:wrap;gap:4px}}
+
+/* --- scan to download (QR codes) --- */
+.scan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:640px;margin:36px auto 0}
+.qr-card{background:var(--navy-soft);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px 22px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.qr-frame{position:relative;background:#fff;border-radius:12px;padding:12px;line-height:0;box-shadow:var(--shadow)}
+.qr-frame img{width:184px;height:184px;image-rendering:pixelated}
+.qr-badge{position:absolute;top:8px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy-deep);
+  font-family:var(--font-display);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.qr-label{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:1.08rem;color:#fff;margin-top:18px}
+.qr-plat{color:var(--slate);font-size:.82rem;margin-top:3px}
+.store-btn{display:none;margin-top:16px;font-size:.9rem;padding:11px 20px}
+.store-btn[aria-disabled="true"]{opacity:.5;cursor:default;pointer-events:none}
+.scan-note{color:var(--slate);font-size:.86rem;max-width:56ch;margin:26px auto 0;text-align:center;line-height:1.5}
+/* On touch/narrow screens a phone can't scan its own display — show tap-through buttons and stack the codes. */
+@media(max-width:640px){
+  .scan-grid{grid-template-columns:1fr;max-width:340px}
+  .store-btn{display:inline-flex}
+}
