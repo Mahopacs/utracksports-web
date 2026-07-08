@@ -263,3 +263,21 @@ section{padding:clamp(56px,9vw,110px) 0}
 .tag-pill{display:inline-block;background:rgba(46,158,91,.16);color:var(--pitch-lt);font-size:.78rem;
   font-family:var(--font-display);letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
 .divider{height:1px;background:var(--line);border:0;margin:0}
+
+/* --- pricing table --- */
+.ptable{background:#0C1216;border:1px solid #2A363E;border-radius:14px;overflow:hidden;margin-top:26px}
+.ptable .r{display:flex;justify-content:space-between;align-items:center;padding:13px 18px;border-bottom:1px solid #1E2830;font-size:14px;color:var(--slate)}
+.ptable .r:last-child{border-bottom:0}
+.ptable .r .lbl{color:var(--slate-lt,#8B96A0)}
+.ptable .r .val{font-weight:700;font-family:monospace}
+.ptable .r .val.free{color:var(--pitch-lt)}
+.ptable .r .val.paid{color:var(--gold)}
+
+/* --- how utrack is different (comparison grid) --- */
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.diff-box{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:24px}
+.diff-box .dk{font-weight:700;font-size:1rem;color:#fff;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.diff-box .di{display:flex;gap:9px;align-items:flex-start;font-size:.9rem;color:var(--slate-lt,#8B96A0);margin-top:8px}
+.diff-box .di .dc{color:var(--pitch-lt);font-weight:700;flex-shrink:0}
+.diff-disclaim{margin-top:22px;font-size:.8rem;color:var(--slate-lt,#6B7880);max-width:70ch;line-height:1.5}
+@media(max-width:760px){.diff-grid{grid-template-columns:1fr}.ptable .r{flex-wrap:wrap;gap:4px}}
