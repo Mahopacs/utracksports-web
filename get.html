@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get uTrack Sports</title>
+<meta name="description" content="Download uTrack Sports — on the App Store for iPhone &amp; iPad, and on Google Play for Android.">
+<meta name="robots" content="noindex">
+<!-- Device-aware redirect. Runs before the page paints so phone users are sent
+     straight to the right store and barely see this page. If the script does
+     not run (JS off / bot) or the device is not iOS/Android, the chooser below
+     renders normally so no one lands on a blank page. -->
+<script>
+(function () {
+  try {
+    var ua = navigator.userAgent || navigator.vendor || "";
+    var APPSTORE = "https://apps.apple.com/us/app/utrack-sports/id6779220146";
+    var PLAY = "https://play.google.com/store/apps/details?id=com.utracksports.app";
+    // iOS: iPhone / iPod / older iPads. (Modern iPadOS reports as Mac and falls
+    // through to the chooser — a tablet we can't positively identify, per design.)
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+      location.replace(APPSTORE);
+      return;
+    }
+    if (/android/i.test(ua)) {
+      location.replace(PLAY);
+      return;
+    }
+  } catch (e) {
+    /* fall through to the chooser page */
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <nav class="nav-links" id="nav">
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="how-to.html">How it works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:clamp(40px,6vw,72px)">
+  <div class="wrap">
+    <div class="center" style="max-width:640px;margin:0 auto">
+      <span class="eyebrow">Download</span>
+      <h1>Get uTrack<br><span class="hl">on your phone.</span></h1>
+      <p class="lead" style="margin:0 auto">Pick your store below. uTrack is free to download &mdash; no account required. Just install and start tracking your first game.</p>
+    </div>
+
+    <div class="scan-grid" style="margin-top:40px">
+      <div class="qr-card">
+        <div class="qr-label">App Store</div>
+        <div class="qr-plat">iPhone &amp; iPad &mdash; iOS</div>
+        <a class="btn btn-primary" style="width:100%;justify-content:center" href="https://apps.apple.com/us/app/utrack-sports/id6779220146" rel="noopener">Open the App Store</a>
+      </div>
+      <div class="qr-card">
+        <div class="qr-label">Google Play</div>
+        <div class="qr-plat">Android</div>
+        <a class="btn btn-primary" style="width:100%;justify-content:center" href="https://play.google.com/store/apps/details?id=com.utracksports.app" rel="noopener">Open Google Play</a>
+      </div>
+    </div>
+
+    <p class="scan-note">On a phone? We usually send you straight to the right store. If you landed here, just tap your platform above.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="index.html" class="brand"><span class="mark">u</span>uTrack<span class="tag">Sports</span></a>
+      <div class="foot-links">
+        <a href="features.html">Features</a>
+        <a href="screenshots.html">Screenshots</a>
+        <a href="how-to.html">How it works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <p class="foot-note">uTrack Sports is developed by Young Sentinel LLC, a Connecticut limited liability company. Support: <a href="mailto:support@utracksports.com" style="color:var(--pitch-lt)">support@utracksports.com</a></p>
+    <p class="foot-note">&copy; 2026 Young Sentinel LLC. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
